@@ -1,5 +1,6 @@
 import AdminForm from "./components/AdminForm";
 import AdminList from "./components/AdminList";
+import ShopForm from "./components/ShopForm";
 import "./App.css";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <AdminForm />
       <AdminList />
+      <ShopForm />
     </div>
   );
 }
