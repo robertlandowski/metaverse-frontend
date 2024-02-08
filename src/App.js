@@ -1,3 +1,4 @@
+import { useState } from "react";
 import AdminForm from "./components/AdminForm";
 import AdminList from "./components/AdminList";
 import ShopForm from "./components/ShopForm";
@@ -6,19 +7,38 @@ import BusinessOwnerForm from "./components/BusinessForm";
 import BusinessOwnersList from "./components/BusinessOwnersList";
 import BookingForm from "./components/BookingForm";
 import BookingsList from "./components/BookingList";
+import Navigation from "./components/Navigation";
+import Home from "./components/Home";
 import "./App.css";
 
 function App() {
+  const [showNav, setShowNav] = useState(false);
+  const [color, setColor] = useState("red");
+
+  const handleButtonClick = (val) => {
+    if (color === val || !showNav) {
+      setShowNav(!showNav);
+    }
+
+    setColor(val);
+  };
+
   return (
     <div className="App">
-      <AdminForm />
+      <div className={`navigation ${showNav ? `show ${color}` : `${color}`}`}>
+        <Navigation />
+      </div>
+      <div className="main-container">
+        <Home onButtonClick={handleButtonClick} />
+      </div>
+      {/* <AdminForm />
       <AdminList />
       <ShopForm />
       <ShopsList />
       <BusinessOwnerForm />
       <BusinessOwnersList />
       <BookingForm />
-      <BookingsList />
+      <BookingsList /> */}
     </div>
   );
 }
