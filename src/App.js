@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AdminForm from "./components/AdminForm";
 import AdminList from "./components/AdminList";
 import ShopsPage from "./components/AdminShops";
+import BusinessOwnersPage from "./components/BusinessOwnersPage";
 import ShopsList from "./components/ShopList";
 import BusinessOwnerForm from "./components/BusinessForm";
 import BusinessOwnersList from "./components/BusinessOwnersList";
@@ -37,7 +38,7 @@ function App() {
               element={<Home onButtonClick={handleButtonClick} />}
             />
             <Route path="admin/shops" element={<ShopsPage />} />
-            <Route path="admin/business" element={<AdminList />} />
+            <Route path="admin/business" element={<BusinessOwnersPage />} />
             {/* <Route path="admin/calendar" element={<ShopForm />} /> */}
           </Routes>
         </div>
