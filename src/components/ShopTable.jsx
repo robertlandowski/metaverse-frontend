@@ -2,11 +2,11 @@ import React from "react";
 import "../styles/ShopTable.css";
 
 function ShopTable({ shops, deleteShop }) {
-  console.log(shops);
   return (
     <table>
       <thead>
         <tr>
+          <th>Shop ID</th>
           <th>Shop Name</th>
           <th>Description</th>
           <th>Actions</th>
@@ -15,6 +15,7 @@ function ShopTable({ shops, deleteShop }) {
       <tbody>
         {shops.map((shop) => (
           <tr key={shop.shop_id}>
+            <td>{shop.shop_id}</td>
             <td>{shop.name}</td>
             <td>{shop.description}</td>
             <td>

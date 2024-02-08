@@ -1,0 +1,74 @@
+.timeline-container {
+  overflow-x: auto;
+}
+
+.bookings-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.bookings-table th,
+.bookings-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.booking-bars-container {
+  position: relative;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.booking-bar {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  height: 70%;
+  background-color: rgb(100, 61, 136);
+  box-shadow: 0 0 8px rgb(217, 176, 255), 0 0 10px rgb(217, 176, 255);
+  border-radius: 4px;
+}
+
+.booking-bar.current {
+  background-color: rgb(255, 0, 0);
+  box-shadow: 0 0 8px rgba(255, 100, 100, 0.7), 0 0 10px rgba(255, 0, 0, 0.8);
+}
+
+th {
+  background-color: rgba(100, 61, 136, 0.85);
+  color: white;
+}
+
+.legend {
+  margin-top: 10px;
+  display: flex;
+  justify-content: start;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.color-box {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.color-box.current {
+  background-color: rgb(255, 0, 0);
+  box-shadow: 0 0 8px rgba(255, 100, 100, 0.7), 0 0 10px rgba(255, 0, 0, 0.8);
+}
+
+.color-box.future {
+  background-color: rgb(100, 61, 136);
+  box-shadow: 0 0 8px rgb(217, 176, 255), 0 0 10px rgb(217, 176, 255);
+}

@@ -18,18 +18,15 @@ function BookingForm() {
   const onSubmit = async (e) => {
     e.preventDefault();
     try {
-      // Adjust the URL to match your server's address and endpoint
       const response = await axios.post(
         "http://localhost:3000/api/bookings",
         formData
       );
       console.log("Booking Added:", response.data);
-      // Reset form or provide success feedback
       setFormData({ shopId: "", ownerId: "", startDate: "", endDate: "" });
       alert("Booking successfully added!");
     } catch (err) {
       console.error("Error adding booking:", err);
-      // Handle errors, such as displaying a user-friendly message
       alert("Failed to add booking.");
     }
   };
