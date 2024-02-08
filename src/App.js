@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AdminForm from "./components/AdminForm";
 import AdminList from "./components/AdminList";
 import ShopForm from "./components/ShopForm";
@@ -29,7 +30,15 @@ function App() {
         <Navigation />
       </div>
       <div className="main-container">
-        <Home onButtonClick={handleButtonClick} />
+        <Routes>
+          <Route
+            path="/"
+            element={<Home onButtonClick={handleButtonClick} />}
+          />
+          <Route path="admin/shops" element={<AdminForm />} />
+          <Route path="admin/business" element={<AdminList />} />
+          <Route path="admin/calendar" element={<ShopForm />} />
+        </Routes>
       </div>
       {/* <AdminForm />
       <AdminList />
