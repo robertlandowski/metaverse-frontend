@@ -32,10 +32,10 @@ function BookingForm() {
   };
 
   return (
-    <div>
+    <div className="form-container">
       <h2>Add New Booking</h2>
       <form onSubmit={onSubmit}>
-        <div>
+        <div className="form-group">
           <label htmlFor="shopId">Shop ID</label>
           <input
             type="number"
@@ -46,7 +46,7 @@ function BookingForm() {
             required
           />
         </div>
-        <div>
+        <div className="form-group">
           <label htmlFor="ownerId">Owner ID</label>
           <input
             type="number"
@@ -57,7 +57,7 @@ function BookingForm() {
             required
           />
         </div>
-        <div>
+        <div className="form-group">
           <label htmlFor="startDate">Start Date</label>
           <input
             type="date"
@@ -68,7 +68,7 @@ function BookingForm() {
             required
           />
         </div>
-        <div>
+        <div className="form-group">
           <label htmlFor="endDate">End Date</label>
           <input
             type="date"
@@ -79,7 +79,9 @@ function BookingForm() {
             required
           />
         </div>
-        <button type="submit">Submit Booking</button>
+        <button type="submit" className="submit-btn">
+          Submit Booking
+        </button>
       </form>
     </div>
   );

@@ -40,7 +40,7 @@ function App() {
             <Route path="admin/shops" element={<ShopsPage />} />
             <Route path="admin/business" element={<BusinessOwnersPage />} />
             <Route path="admin/calendar" element={<BookingsList />} />
-            <Route path="admin/calendar2" element={<BookingForm />} />
+            <Route path="admin/booking" element={<BookingForm />} />
           </Routes>
         </div>
       </div>

@@ -9,6 +9,7 @@ const Navigation = () => {
       <Link to="admin/shops">Manage Shops</Link>
       <Link to="admin/business">Manage Businesses</Link>
       <Link to="admin/calendar">Calendar</Link>
+      <Link to="admin/booking">Schedule a Booking</Link>
     </div>
   );
 };
