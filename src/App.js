@@ -5,6 +5,7 @@ import ShopsList from "./components/ShopList";
 import BusinessOwnerForm from "./components/BusinessForm";
 import BusinessOwnersList from "./components/BusinessOwnersList";
 import BookingForm from "./components/BookingForm";
+import BookingsList from "./components/BookingList";
 import "./App.css";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <BusinessOwnerForm />
       <BusinessOwnersList />
       <BookingForm />
+      <BookingsList />
     </div>
   );
 }
