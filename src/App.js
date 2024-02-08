@@ -2,7 +2,7 @@ import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AdminForm from "./components/AdminForm";
 import AdminList from "./components/AdminList";
-import ShopForm from "./components/ShopForm";
+import ShopsPage from "./components/AdminShops";
 import ShopsList from "./components/ShopList";
 import BusinessOwnerForm from "./components/BusinessForm";
 import BusinessOwnersList from "./components/BusinessOwnersList";
@@ -30,15 +30,17 @@ function App() {
         <Navigation />
       </div>
       <div className="main-container">
-        <Routes>
-          <Route
-            path="/"
-            element={<Home onButtonClick={handleButtonClick} />}
-          />
-          <Route path="admin/shops" element={<AdminForm />} />
-          <Route path="admin/business" element={<AdminList />} />
-          <Route path="admin/calendar" element={<ShopForm />} />
-        </Routes>
+        <div className="content-container">
+          <Routes>
+            <Route
+              path="/"
+              element={<Home onButtonClick={handleButtonClick} />}
+            />
+            <Route path="admin/shops" element={<ShopsPage />} />
+            <Route path="admin/business" element={<AdminList />} />
+            {/* <Route path="admin/calendar" element={<ShopForm />} /> */}
+          </Routes>
+        </div>
       </div>
       {/* <AdminForm />
       <AdminList />

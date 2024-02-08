@@ -1,0 +1,40 @@
+.admin-shops-container {
+  margin: 20%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-top: 20px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: rgba(100, 61, 136, 0.85);
+  color: white;
+}
+
+tr:hover {
+  background-color: rgba(255, 105, 97, 0.5);
+}
+
+button {
+  background-color: var(--btn-color);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--glow-color);
+}
