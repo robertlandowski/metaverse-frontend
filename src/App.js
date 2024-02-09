@@ -12,6 +12,7 @@ import BookingsList from "./components/BookingList";
 import Navigation from "./components/Navigation";
 import Home from "./components/Home";
 import AvailableBookingsTable from "./components/AvailableBookings";
+import CurrentShops from "./components/CurrentShops";
 import "./App.css";
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
               path="owner/available"
               element={<AvailableBookingsTable />}
             />
+            <Route path="shopper/current" element={<CurrentShops />} />
           </Routes>
         </div>
       </div>

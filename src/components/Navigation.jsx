@@ -11,6 +11,7 @@ const Navigation = ({ color }) => {
       {color === "red" && <Link to="admin/calendar">Calendar</Link>}
       {color === "blue" && <Link to="owner/booking">Schedule a Booking</Link>}
       {color === "blue" && <Link to="owner/available">Next Available</Link>}
+      {color === "purple" && <Link to="shopper/current">Current Stores</Link>}
     </div>
   );
 };
