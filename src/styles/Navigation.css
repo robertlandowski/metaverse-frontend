@@ -81,9 +81,7 @@
 }
 
 .blue a:hover {
-  background-color: rgba(123, 251, 255, 0.781);
-  color: rgb(206, 255, 255);
-  border-radius: 4px;
+  color: rgba(123, 251, 255, 0.781);
 }
 
 .purple {
@@ -93,7 +91,9 @@
   width: 15%;
   height: 100vh;
   background-color: rgb(100, 61, 136);
-  border: 2px solid rgb(217, 176, 255);
+  border-top: 2px solid rgb(217, 176, 255);
+  border-right: 2px solid rgb(217, 176, 255);
+  border-bottom: 2px solid rgb(217, 176, 255);
   padding: 20px;
   box-sizing: border-box;
   display: flex;
@@ -121,7 +121,5 @@
 }
 
 .purple a:hover {
-  background-color: rgba(191, 123, 255, 0.781);
   color: rgb(231, 206, 255);
-  border-radius: 4px;
 }

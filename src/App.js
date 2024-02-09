@@ -11,6 +11,7 @@ import BookingForm from "./components/BookingForm";
 import BookingsList from "./components/BookingList";
 import Navigation from "./components/Navigation";
 import Home from "./components/Home";
+import AvailableBookingsTable from "./components/AvailableBookings";
 import "./App.css";
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
   return (
     <div className="App">
       <div className={`navigation ${showNav ? `show ${color}` : `${color}`}`}>
-        <Navigation />
+        <Navigation color={color} />
       </div>
       <div className="main-container">
         <div className="content-container">
@@ -40,18 +41,14 @@ function App() {
             <Route path="admin/shops" element={<ShopsPage />} />
             <Route path="admin/business" element={<BusinessOwnersPage />} />
             <Route path="admin/calendar" element={<BookingsList />} />
-            <Route path="admin/booking" element={<BookingForm />} />
+            <Route path="owner/booking" element={<BookingForm />} />
+            <Route
+              path="owner/available"
+              element={<AvailableBookingsTable />}
+            />
           </Routes>
         </div>
       </div>
-      {/* <AdminForm />
-      <AdminList />
-      <ShopForm />
-      <ShopsList />
-      <BusinessOwnerForm />
-      <BusinessOwnersList />
-      <BookingForm />
-      <BookingsList /> */}
     </div>
   );
 }

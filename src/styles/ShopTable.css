@@ -7,6 +7,8 @@ table {
   border-collapse: collapse;
   background-color: rgba(255, 255, 255, 0.8);
   margin-top: 20px;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 th,
@@ -19,10 +21,6 @@ td {
 th {
   background-color: rgba(100, 61, 136, 0.85);
   color: white;
-}
-
-tr:hover {
-  background-color: rgba(255, 105, 97, 0.5);
 }
 
 button {
